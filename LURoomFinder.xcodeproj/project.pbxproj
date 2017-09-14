@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4BCD87F1F66053D003E31C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BCD87E1F66053D003E31C6 /* AppDelegate.swift */; };
+		F4BCD8811F66053D003E31C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BCD8801F66053D003E31C6 /* ViewController.swift */; };
+		F4BCD8841F66053D003E31C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BCD8821F66053D003E31C6 /* Main.storyboard */; };
+		F4BCD8861F66053D003E31C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BCD8851F66053D003E31C6 /* Assets.xcassets */; };
+		F4BCD8891F66053D003E31C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BCD8871F66053D003E31C6 /* LaunchScreen.storyboard */; };
+		F4BCD8941F66053D003E31C6 /* LURoomFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BCD8931F66053D003E31C6 /* LURoomFinderTests.swift */; };
+		F4BCD89F1F66053D003E31C6 /* LURoomFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BCD89E1F66053D003E31C6 /* LURoomFinderUITests.swift */; };
+		F4BCD8AF1F66062B003E31C6 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BCD8AE1F66062B003E31C6 /* Building.swift */; };
+		F4BCD8B11F660675003E31C6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BCD8B01F660675003E31C6 /* MapView.swift */; };
+		F4BCD8B41F66228A003E31C6 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BCD8B31F66228A003E31C6 /* Operators.swift */; };
+		F4BCD8B61F662348003E31C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BCD8B51F662348003E31C6 /* Extensions.swift */; };
+		F4BCD8B81F672F74003E31C6 /* Floor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BCD8B71F672F74003E31C6 /* Floor.swift */; };
+		F4BCD8BA1F672F7A003E31C6 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BCD8B91F672F7A003E31C6 /* Room.swift */; };
+		F4BCD8BC1F673D77003E31C6 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BCD8BB1F673D77003E31C6 /* Helpers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4BCD8901F66053D003E31C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4BCD8731F66053D003E31C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4BCD87A1F66053D003E31C6;
+			remoteInfo = LURoomFinder;
+		};
+		F4BCD89B1F66053D003E31C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4BCD8731F66053D003E31C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4BCD87A1F66053D003E31C6;
+			remoteInfo = LURoomFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4BCD87B1F66053D003E31C6 /* LURoomFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LURoomFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BCD87E1F66053D003E31C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4BCD8801F66053D003E31C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4BCD8831F66053D003E31C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4BCD8851F66053D003E31C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4BCD8881F66053D003E31C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4BCD88A1F66053D003E31C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4BCD88F1F66053D003E31C6 /* LURoomFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LURoomFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BCD8931F66053D003E31C6 /* LURoomFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LURoomFinderTests.swift; sourceTree = "<group>"; };
+		F4BCD8951F66053D003E31C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4BCD89A1F66053D003E31C6 /* LURoomFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LURoomFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BCD89E1F66053D003E31C6 /* LURoomFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LURoomFinderUITests.swift; sourceTree = "<group>"; };
+		F4BCD8A01F66053D003E31C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4BCD8AE1F66062B003E31C6 /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		F4BCD8B01F660675003E31C6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F4BCD8B31F66228A003E31C6 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		F4BCD8B51F662348003E31C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F4BCD8B71F672F74003E31C6 /* Floor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floor.swift; sourceTree = "<group>"; };
+		F4BCD8B91F672F7A003E31C6 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		F4BCD8BB1F673D77003E31C6 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4BCD8781F66053D003E31C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BCD88C1F66053D003E31C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BCD8971F66053D003E31C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4BCD8721F66053D003E31C6 = {
+			isa = PBXGroup;
+			children = (
+				F4BCD87D1F66053D003E31C6 /* LURoomFinder */,
+				F4BCD8921F66053D003E31C6 /* LURoomFinderTests */,
+				F4BCD89D1F66053D003E31C6 /* LURoomFinderUITests */,
+				F4BCD87C1F66053D003E31C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4BCD87C1F66053D003E31C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4BCD87B1F66053D003E31C6 /* LURoomFinder.app */,
+				F4BCD88F1F66053D003E31C6 /* LURoomFinderTests.xctest */,
+				F4BCD89A1F66053D003E31C6 /* LURoomFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4BCD87D1F66053D003E31C6 /* LURoomFinder */ = {
+			isa = PBXGroup;
+			children = (
+				F4BCD8B21F662281003E31C6 /* Helper */,
+				F4BCD8AC1F6605EC003E31C6 /* Map */,
+				F4BCD87E1F66053D003E31C6 /* AppDelegate.swift */,
+				F4BCD8801F66053D003E31C6 /* ViewController.swift */,
+				F4BCD8821F66053D003E31C6 /* Main.storyboard */,
+				F4BCD8851F66053D003E31C6 /* Assets.xcassets */,
+				F4BCD8871F66053D003E31C6 /* LaunchScreen.storyboard */,
+				F4BCD88A1F66053D003E31C6 /* Info.plist */,
+			);
+			path = LURoomFinder;
+			sourceTree = "<group>";
+		};
+		F4BCD8921F66053D003E31C6 /* LURoomFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4BCD8931F66053D003E31C6 /* LURoomFinderTests.swift */,
+				F4BCD8951F66053D003E31C6 /* Info.plist */,
+			);
+			path = LURoomFinderTests;
+			sourceTree = "<group>";
+		};
+		F4BCD89D1F66053D003E31C6 /* LURoomFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4BCD89E1F66053D003E31C6 /* LURoomFinderUITests.swift */,
+				F4BCD8A01F66053D003E31C6 /* Info.plist */,
+			);
+			path = LURoomFinderUITests;
+			sourceTree = "<group>";
+		};
+		F4BCD8AC1F6605EC003E31C6 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F4BCD8AD1F6605F8003E31C6 /* Components */,
+				F4BCD8B01F660675003E31C6 /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		F4BCD8AD1F6605F8003E31C6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F4BCD8AE1F66062B003E31C6 /* Building.swift */,
+				F4BCD8B71F672F74003E31C6 /* Floor.swift */,
+				F4BCD8B91F672F7A003E31C6 /* Room.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F4BCD8B21F662281003E31C6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F4BCD8B31F66228A003E31C6 /* Operators.swift */,
+				F4BCD8B51F662348003E31C6 /* Extensions.swift */,
+				F4BCD8BB1F673D77003E31C6 /* Helpers.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4BCD87A1F66053D003E31C6 /* LURoomFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4BCD8A31F66053D003E31C6 /* Build configuration list for PBXNativeTarget "LURoomFinder" */;
+			buildPhases = (
+				F4BCD8771F66053D003E31C6 /* Sources */,
+				F4BCD8781F66053D003E31C6 /* Frameworks */,
+				F4BCD8791F66053D003E31C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LURoomFinder;
+			productName = LURoomFinder;
+			productReference = F4BCD87B1F66053D003E31C6 /* LURoomFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4BCD88E1F66053D003E31C6 /* LURoomFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4BCD8A61F66053D003E31C6 /* Build configuration list for PBXNativeTarget "LURoomFinderTests" */;
+			buildPhases = (
+				F4BCD88B1F66053D003E31C6 /* Sources */,
+				F4BCD88C1F66053D003E31C6 /* Frameworks */,
+				F4BCD88D1F66053D003E31C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4BCD8911F66053D003E31C6 /* PBXTargetDependency */,
+			);
+			name = LURoomFinderTests;
+			productName = LURoomFinderTests;
+			productReference = F4BCD88F1F66053D003E31C6 /* LURoomFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4BCD8991F66053D003E31C6 /* LURoomFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4BCD8A91F66053D003E31C6 /* Build configuration list for PBXNativeTarget "LURoomFinderUITests" */;
+			buildPhases = (
+				F4BCD8961F66053D003E31C6 /* Sources */,
+				F4BCD8971F66053D003E31C6 /* Frameworks */,
+				F4BCD8981F66053D003E31C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4BCD89C1F66053D003E31C6 /* PBXTargetDependency */,
+			);
+			name = LURoomFinderUITests;
+			productName = LURoomFinderUITests;
+			productReference = F4BCD89A1F66053D003E31C6 /* LURoomFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4BCD8731F66053D003E31C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = thislooksfun;
+				TargetAttributes = {
+					F4BCD87A1F66053D003E31C6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					F4BCD88E1F66053D003E31C6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F4BCD87A1F66053D003E31C6;
+					};
+					F4BCD8991F66053D003E31C6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F4BCD87A1F66053D003E31C6;
+					};
+				};
+			};
+			buildConfigurationList = F4BCD8761F66053D003E31C6 /* Build configuration list for PBXProject "LURoomFinder" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4BCD8721F66053D003E31C6;
+			productRefGroup = F4BCD87C1F66053D003E31C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4BCD87A1F66053D003E31C6 /* LURoomFinder */,
+				F4BCD88E1F66053D003E31C6 /* LURoomFinderTests */,
+				F4BCD8991F66053D003E31C6 /* LURoomFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4BCD8791F66053D003E31C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BCD8891F66053D003E31C6 /* LaunchScreen.storyboard in Resources */,
+				F4BCD8861F66053D003E31C6 /* Assets.xcassets in Resources */,
+				F4BCD8841F66053D003E31C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BCD88D1F66053D003E31C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BCD8981F66053D003E31C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4BCD8771F66053D003E31C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BCD8811F66053D003E31C6 /* ViewController.swift in Sources */,
+				F4BCD8B61F662348003E31C6 /* Extensions.swift in Sources */,
+				F4BCD8BA1F672F7A003E31C6 /* Room.swift in Sources */,
+				F4BCD8B41F66228A003E31C6 /* Operators.swift in Sources */,
+				F4BCD8BC1F673D77003E31C6 /* Helpers.swift in Sources */,
+				F4BCD8B81F672F74003E31C6 /* Floor.swift in Sources */,
+				F4BCD8B11F660675003E31C6 /* MapView.swift in Sources */,
+				F4BCD8AF1F66062B003E31C6 /* Building.swift in Sources */,
+				F4BCD87F1F66053D003E31C6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BCD88B1F66053D003E31C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BCD8941F66053D003E31C6 /* LURoomFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BCD8961F66053D003E31C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BCD89F1F66053D003E31C6 /* LURoomFinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4BCD8911F66053D003E31C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4BCD87A1F66053D003E31C6 /* LURoomFinder */;
+			targetProxy = F4BCD8901F66053D003E31C6 /* PBXContainerItemProxy */;
+		};
+		F4BCD89C1F66053D003E31C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4BCD87A1F66053D003E31C6 /* LURoomFinder */;
+			targetProxy = F4BCD89B1F66053D003E31C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4BCD8821F66053D003E31C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4BCD8831F66053D003E31C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4BCD8871F66053D003E31C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4BCD8881F66053D003E31C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4BCD8A11F66053D003E31C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4BCD8A21F66053D003E31C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4BCD8A41F66053D003E31C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q9K6UK48V2;
+				INFOPLIST_FILE = LURoomFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.thislooksfun.LURoomFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4BCD8A51F66053D003E31C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q9K6UK48V2;
+				INFOPLIST_FILE = LURoomFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.thislooksfun.LURoomFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4BCD8A71F66053D003E31C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q9K6UK48V2;
+				INFOPLIST_FILE = LURoomFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.thislooksfun.LURoomFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LURoomFinder.app/LURoomFinder";
+			};
+			name = Debug;
+		};
+		F4BCD8A81F66053D003E31C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q9K6UK48V2;
+				INFOPLIST_FILE = LURoomFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.thislooksfun.LURoomFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LURoomFinder.app/LURoomFinder";
+			};
+			name = Release;
+		};
+		F4BCD8AA1F66053D003E31C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q9K6UK48V2;
+				INFOPLIST_FILE = LURoomFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.thislooksfun.LURoomFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LURoomFinder;
+			};
+			name = Debug;
+		};
+		F4BCD8AB1F66053D003E31C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q9K6UK48V2;
+				INFOPLIST_FILE = LURoomFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.thislooksfun.LURoomFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LURoomFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4BCD8761F66053D003E31C6 /* Build configuration list for PBXProject "LURoomFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BCD8A11F66053D003E31C6 /* Debug */,
+				F4BCD8A21F66053D003E31C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4BCD8A31F66053D003E31C6 /* Build configuration list for PBXNativeTarget "LURoomFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BCD8A41F66053D003E31C6 /* Debug */,
+				F4BCD8A51F66053D003E31C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4BCD8A61F66053D003E31C6 /* Build configuration list for PBXNativeTarget "LURoomFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BCD8A71F66053D003E31C6 /* Debug */,
+				F4BCD8A81F66053D003E31C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4BCD8A91F66053D003E31C6 /* Build configuration list for PBXNativeTarget "LURoomFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BCD8AA1F66053D003E31C6 /* Debug */,
+				F4BCD8AB1F66053D003E31C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4BCD8731F66053D003E31C6 /* Project object */;
+}
